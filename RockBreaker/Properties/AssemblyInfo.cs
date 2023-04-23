@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RockBreaker")]
-[assembly: AssemblyDescription("Helpers for developers. Compare Helper, IP Helper and Validation Helper. Github : https://github.com/kayakiranh/RockBreakerNugget")]
+[assembly: AssemblyTitle("RockBreaker Helper Tool")]
+[assembly: AssemblyDescription("Helpers for developers. Compare Helper, IP Helper and Validation Helper")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Compare Helper, IP Helper and Validation Helper")]
