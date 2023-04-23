@@ -37,14 +37,14 @@ namespace RockBreaker
             return val < 1 ? 0 : val;
         }
 
-        public static int ListValidation(this object val)
+        public static bool ListValidation(this object val)
         {
             IEnumerable enumerable = val as IEnumerable;
-            if (enumerable == null) return 0;
+            if (enumerable == null) return false;
 
             int count = 0;
             foreach (object enumerableItem in enumerable) count++;
-            return count;
+            return count > 0;
         }
 
         public static string MailValidation(this string val)
