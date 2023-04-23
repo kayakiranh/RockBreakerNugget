@@ -31,7 +31,6 @@ C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\bin\Release\System
 C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\bin\Release\System.Text.Json.xml
 C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\bin\Release\System.Threading.Tasks.Extensions.xml
 C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\bin\Release\System.ValueTuple.xml
-C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\obj\Release\RockBreaker.csproj.AssemblyReference.cache
 C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\obj\Release\RockBreaker.csproj.CoreCompileInputs.cache
 C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\obj\Release\RockBreaker.csproj.CopyComplete
 C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreaker\obj\Release\RockBreaker.dll
