@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>RockBreaker.Infrastructure.Helper.Tool</PackageId>
+    <Title>RockBreaker Infrastructure Helper Tool</Title>
+    <Version>1.0.2</Version>
+    <Authors>Hüseyin Kayakıran</Authors>
+    <Company>Hüseyin Kayakıran</Company>
+    <Product>RockBreaker.Helper.Tool</Product>
+    <Description>Helpers for developers. Compare Helper, IP Helper, Password Helper, Format Helper, Order Helper and Validation Helper</Description>
+    <Copyright>All rigts are open.</Copyright>
+    <PackageProjectUrl>https://github.com/kayakiranh/RockBreakerNugget</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kayakiranh/RockBreakerNugget</RepositoryUrl>
+    <PackageTags>Compare Validation Format Order Encyrpt StringCompare ObjectCompare IPHelper SaltHashPassword StringValidation IntegerValidation LongValidation DecimalValidation ListValidation EmailValidation UrlValidation SecurityValidation TurkishIdentityValidation DynamicOrder DecimalFormat DateTimeFormat LongFormat</PackageTags>
+    <PackageReleaseNotes>String and object compare helpers added. IP helper added. Salt+Hash password helper added. String, int, long, decimal, list validations added. Email, Url, Security and Turkish identity validation helpers added.</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlSanitizer" Version="8.0.645" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="NuGet.CommandLine" Version="6.5.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33529.622
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockBreaker", "RockBreaker\RockBreaker.csproj", "{0ACA6DBB-CA54-4B1F-BFE5-6818D1CB5973}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockBreakerNugget", "RockBreakerNugget\RockBreakerNugget.csproj", "{B1CC2C8C-3D80-494B-98CC-9440F4B78278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0ACA6DBB-CA54-4B1F-BFE5-6818D1CB5973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0ACA6DBB-CA54-4B1F-BFE5-6818D1CB5973}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0ACA6DBB-CA54-4B1F-BFE5-6818D1CB5973}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0ACA6DBB-CA54-4B1F-BFE5-6818D1CB5973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CC2C8C-3D80-494B-98CC-9440F4B78278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CC2C8C-3D80-494B-98CC-9440F4B78278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CC2C8C-3D80-494B-98CC-9440F4B78278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CC2C8C-3D80-494B-98CC-9440F4B78278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

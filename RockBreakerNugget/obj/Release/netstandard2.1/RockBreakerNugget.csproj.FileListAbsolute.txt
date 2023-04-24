@@ -1,0 +1,10 @@
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\bin\Release\netstandard2.1\RockBreakerNugget.deps.json
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\bin\Release\netstandard2.1\RockBreakerNugget.dll
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\bin\Release\netstandard2.1\RockBreakerNugget.pdb
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\obj\Release\netstandard2.1\RockBreakerNugget.csproj.AssemblyReference.cache
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\obj\Release\netstandard2.1\RockBreakerNugget.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\obj\Release\netstandard2.1\RockBreakerNugget.AssemblyInfoInputs.cache
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\obj\Release\netstandard2.1\RockBreakerNugget.AssemblyInfo.cs
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\obj\Release\netstandard2.1\RockBreakerNugget.csproj.CoreCompileInputs.cache
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\obj\Release\netstandard2.1\RockBreakerNugget.dll
+C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\obj\Release\netstandard2.1\RockBreakerNugget.pdb
