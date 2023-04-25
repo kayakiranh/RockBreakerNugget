@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <PackageReference Include="HtmlSanitizer" Version="8.0.645" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NuGet.CommandLine" Version="6.5.0">
       <PrivateAssets>all</PrivateAssets>
