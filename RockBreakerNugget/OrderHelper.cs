@@ -9,12 +9,12 @@ namespace RockBreakerNugget
     public static class OrderHelper
     {
         /// <summary>
-        /// Sort dynamic list
+        /// Sort dynamic list. Method can sort any list.
         /// </summary>
         /// <param name="obj">List value</param>
-        /// <param name="orderByDescending">True/False</param>
-        /// <param name="propertyName">String value</param>
-        /// <returns>List<dynamic></returns>
+        /// <param name="orderByDescending">OrderByDescending choose</param>
+        /// <param name="propertyName">Propery name</param>
+        /// <returns>List<dynamic>/Original List</returns>
         public static object OrderByProperty(this List<dynamic> obj, bool orderByDescending = false, string propertyName = "Id")
         {
             try

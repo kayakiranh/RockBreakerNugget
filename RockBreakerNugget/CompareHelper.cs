@@ -44,12 +44,9 @@ namespace RockBreakerNugget
         /// <returns>True/False</returns>
         public static bool ArrayCompare(Array[] arr1, Array[] arr2)
         {
-            if (arr1 == null && arr2 == null)
-                return true;
-            if (arr1 == null || arr2 == null)
-                return false;
-            if (arr1.Length != arr2.Length)
-                return false;
+            if (arr1 == null && arr2 == null) return true;
+            if (arr1 == null || arr2 == null) return false;
+            if (arr1.Length != arr2.Length) return false;
             return !arr1.Except(arr2).Any() && !arr2.Except(arr1).Any();
         }
     }

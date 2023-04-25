@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\husey\\Documents\\GitHub\\RockBreakerNugget\\RockBreakerNugget\\RockBreakerNugget.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "C:\\Users\\husey\\Documents\\GitHub\\RockBreakerNugget\\RockBreakerNugget\\RockBreakerNugget.csproj",
         "projectName": "RockBreaker.Infrastructure.Helper.Tool",
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,7 +50,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[13.0.3, )"
             },
             "NuGet.CommandLine": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

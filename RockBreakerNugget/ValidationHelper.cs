@@ -60,7 +60,7 @@ namespace RockBreakerNugget
         /// <summary>
         /// List validation. Check list count
         /// </summary>
-        /// <param name="val">List value</param>
+        /// <param name="val">Object value</param>
         /// <returns>True/False</returns>
         public static bool ListValidation(this object val)
         {
@@ -73,7 +73,7 @@ namespace RockBreakerNugget
         /// <summary>
         /// Mail address validation
         /// </summary>
-        /// <param name="val">String value</param>
+        /// <param name="val">Mail address</param>
         /// <returns>Value/string.Empty</returns>
         public static string MailAddressValidation(this string val)
         {
@@ -108,8 +108,8 @@ namespace RockBreakerNugget
         /// <summary>
         /// Phone validation
         /// </summary>
-        /// <param name="val"></param>
-        /// <param name="startFormat"></param>
+        /// <param name="val">Phone number</param>
+        /// <param name="startFormat">Start format</param>
         /// <returns>Value/string.Empty</returns>
         public static string PhoneValidation(this string val, string startFormat = "+90")
         {
@@ -131,18 +131,17 @@ namespace RockBreakerNugget
         /// <summary>
         /// Url validation. Basic metod
         /// </summary>
-        /// <param name="val">String value</param>
+        /// <param name="val">Url</param>
         /// <returns>True/False</returns>
         public static bool UrlValidation(this string val)
         {
             return Uri.IsWellFormedUriString(val, UriKind.Absolute);
         }
 
-
         /// <summary>
         /// Url validation. Best practice is send request to url.
         /// </summary>
-        /// <param name="val">String value</param>
+        /// <param name="val">Url</param>
         /// <returns>True/False</returns>
         public static async Task<bool> UrlValidationWithClient(this string val)
         {
@@ -166,7 +165,7 @@ namespace RockBreakerNugget
         /// <summary>
         /// Identity validation
         /// </summary>
-        /// <param name="val">String Value</param>
+        /// <param name="val">TC kimlik no</param>
         /// <returns>True/False</returns>
         public static bool TcKimlikNoValidation(this string val)
         {
