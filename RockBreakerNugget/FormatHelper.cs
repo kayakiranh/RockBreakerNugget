@@ -78,8 +78,9 @@ namespace RockBreakerNugget
         public static string FormatDecimal(this decimal val, bool showCurrencyName = false, CultureInfo cultureInfo = null)
         {
             cultureInfo = new CultureInfo(cultureInfo == null ? "tr-TR" : cultureInfo.Name);
+            RegionInfo regionInfo = new RegionInfo(cultureInfo.LCID);
             string withoutCurrencyName = string.Format(CultureInfo.CreateSpecificCulture(cultureInfo.Name), "{0:0,0.00}", val);
-            return showCurrencyName ? $"{withoutCurrencyName} {cultureInfo.NumberFormat.CurrencySymbol}" : withoutCurrencyName;
+            return showCurrencyName ? $"{withoutCurrencyName} {regionInfo.ISOCurrencySymbol}" : withoutCurrencyName;
         }
 
         /// <summary>
@@ -92,10 +93,12 @@ namespace RockBreakerNugget
         public static string FormatDecimalFromLong(this long val, bool showCurrencyName = false, CultureInfo cultureInfo = null)
         {
             cultureInfo = new CultureInfo(cultureInfo == null ? "tr-TR" : cultureInfo.Name);
+            RegionInfo regionInfo = new RegionInfo(cultureInfo.LCID);
             string stringVal = $"{val}.00";
             decimal decimalVal = Convert.ToDecimal(stringVal);
+
             string withoutCurrencyName = string.Format(CultureInfo.CreateSpecificCulture(cultureInfo.Name), "{0:0,0.00}", decimalVal);
-            return showCurrencyName ? $"{withoutCurrencyName} {cultureInfo.NumberFormat.CurrencySymbol}" : withoutCurrencyName;
+            return showCurrencyName ? $"{withoutCurrencyName} {regionInfo.ISOCurrencySymbol}" : withoutCurrencyName;
         }
     }
 }

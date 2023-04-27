@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>RockBreaker.Helper.Tool</id>
+    <id>RockBreaker.Infrastructure.Helper.Tool</id>
 	<authors>Hüseyin Kayakıran</authors>
 	<owners>Hüseyin Kayakıran</owners>
     <version>1.0.3</version>

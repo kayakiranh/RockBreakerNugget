@@ -77,9 +77,9 @@ namespace RockBreakerNugget
 
             StringBuilder res = new StringBuilder();
             Random rnd = new Random();
-            while (0 < passwordLength--)
+            for (int i = 0; i < passwordLength; i++)
             {
-                res.Append(res.Append(rnd.Next(1, 2) % 2 == 0 ? specialChars[rnd.Next(specialChars.Length)] : validChars[rnd.Next(validChars.Length)]));
+                res.Append(rnd.Next(0, 6) % 3 == 0 ? (specialChar ? specialChars[rnd.Next(specialChars.Length)] : validChars[rnd.Next(validChars.Length)]) : validChars[rnd.Next(validChars.Length)]);
             }
             return res.ToString();
         }

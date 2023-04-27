@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -15,16 +17,16 @@ namespace RockBreakerNugget
         /// <param name="orderByDescending">OrderByDescending choose</param>
         /// <param name="propertyName">Propery name</param>
         /// <returns>List<dynamic>/Original List</returns>
-        public static object OrderByProperty(this List<dynamic> obj, bool orderByDescending = false, string propertyName = "Id")
+        public static List<object> OrderByProperty(this object obj, bool orderByDescending = false, string propertyName = "Id")
         {
             try
             {
-                PropertyInfo propertyInfo = obj.GetType().GetProperty(propertyName);
-                return orderByDescending ? obj.OrderByDescending(x => propertyInfo.GetValue(x, null)) : obj.OrderBy(x => propertyInfo.GetValue(x, null));
+                List<object> collection = (obj as IEnumerable<object>).Cast<object>().ToList();
+                return orderByDescending ? collection.OrderByDescending(p => p.GetType().GetProperty(propertyName).GetValue(p, null)).ToList() : collection.OrderBy(p => p.GetType().GetProperty(propertyName).GetValue(p, null)).ToList();
             }
             catch
             {
-                return obj;
+                return new List<object>();
             }
         }
     }

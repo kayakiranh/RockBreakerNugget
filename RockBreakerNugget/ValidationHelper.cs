@@ -20,7 +20,7 @@ namespace RockBreakerNugget
         public static string StringValidation(this string val)
         {
             if (string.IsNullOrEmpty(val) || string.IsNullOrWhiteSpace(val)) return string.Empty;
-            val = Regex.Replace(val, @"\s+", "");
+            val = Regex.Replace(val, @"\s+", " ");
             val = val.Trim();
             if (string.IsNullOrEmpty(val) || string.IsNullOrWhiteSpace(val)) return string.Empty;
 
@@ -75,16 +75,16 @@ namespace RockBreakerNugget
         /// </summary>
         /// <param name="val">Mail address</param>
         /// <returns>Value/string.Empty</returns>
-        public static string MailAddressValidation(this string val)
+        public static bool MailAddressValidation(this string val)
         {
             try
             {
                 MailAddress emailAddress = new MailAddress(val);
-                return emailAddress.Address;
+                return true;
             }
             catch
             {
-                return string.Empty;
+                return false;
             }
         }
 
@@ -96,17 +96,22 @@ namespace RockBreakerNugget
         public static string SecurityValidation(this string val)
         {
             if (string.IsNullOrEmpty(val) || string.IsNullOrWhiteSpace(val)) return string.Empty;
-            val = Regex.Replace(val, @"\s+", "");
+            val = Regex.Replace(val, @"\s+", " ");
             val = val.Trim();
             if (string.IsNullOrEmpty(val) || string.IsNullOrWhiteSpace(val)) return string.Empty;
 
-            val = Regex.Replace(val, "<.*?>", string.Empty);
+            val = Regex.Replace(val, @"(?s)<\s?script.*?(/\s?>|<\s?/\s?script\s?>)", " ");
+            val = Regex.Replace(val, "<.*?>", " ");
+            val = Regex.Replace(val, @" ?\(.*?\)", " ");
+            val = Regex.Replace(val, @"\s+", " ");
+            val = val.Trim();
+
             HtmlSanitizer htmlSanitizer = new HtmlSanitizer();
             return htmlSanitizer.Sanitize(val);
         }
 
         /// <summary>
-        /// Phone validation
+        /// Turkish Phone validation
         /// </summary>
         /// <param name="val">Phone number</param>
         /// <param name="startFormat">Start format</param>
@@ -114,7 +119,7 @@ namespace RockBreakerNugget
         public static string PhoneValidation(this string val, string startFormat = "+90")
         {
             if (string.IsNullOrEmpty(val) || string.IsNullOrWhiteSpace(val)) return string.Empty;
-            val = Regex.Replace(val, @"\s+", "");
+            val = Regex.Replace(val, @"\s+", string.Empty);
             val = val.Trim();
             if (string.IsNullOrEmpty(val) || string.IsNullOrWhiteSpace(val)) return string.Empty;
 
@@ -163,7 +168,7 @@ namespace RockBreakerNugget
         }
 
         /// <summary>
-        /// Identity validation
+        /// Turkish Identity validation
         /// </summary>
         /// <param name="val">TC kimlik no</param>
         /// <returns>True/False</returns>
