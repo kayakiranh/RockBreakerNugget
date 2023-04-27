@@ -47,7 +47,7 @@ namespace RockBreakerNugget
             val = Regex.Replace(val, @"\s+", " ");
             val = val.Trim();
 
-            return val.Length > summarizeLenght ? val.Substring(0, summarizeLenght) + "..." : val;
+            return val.Length > summarizeLenght ? $"{val.Substring(0, summarizeLenght)}..." : $"{val}...";
         }
 
         /// <summary>
