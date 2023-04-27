@@ -6,12 +6,13 @@
     <title>RockBreaker Infrastructure Helper Tool</title>
     <authors>Hüseyin Kayakıran</authors>
     <icon>icon.png</icon>
+    <readme>README.md</readme>
     <projectUrl>https://github.com/kayakiranh/RockBreakerNugget</projectUrl>
     <description>Helpers for developers. Compare Helper, IP Helper, Password Helper, Validation Helper, Article Helper and Clean Helper</description>
     <releaseNotes>String and object compare helpers added. IP helper added. Salt+Hash password and random password helpers added. String, int, long, decimal, list validations added. Email, Url, Security and Turkish identity validation helpers added. Seo friendly url, summarize, generate tags and send ping helpers added. Html and unicode clean helpers added.</releaseNotes>
     <copyright>All rigts are open.</copyright>
     <tags>StringCompare ObjectCompare IPHelper SaltHashPassword StringValidation IntegerValidation LongValidation DecimalValidation ListValidation EmailValidation UrlValidation SecurityValidation TurkishIdentityValidation SeoFriendlyUrl Summarize GenerateTags CleanHtmlCode ReplaceUnicode SendPing</tags>
-    <repository url="https://github.com/kayakiranh/RockBreakerNugget" />
+    <repository type="git" url="https://github.com/kayakiranh/RockBreakerNugget" />
     <dependencies>
       <group targetFramework=".NETStandard2.1">
         <dependency id="HtmlSanitizer" version="8.0.645" exclude="Build,Analyzers" />
@@ -24,5 +25,6 @@
   <files>
     <file src="C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\bin\Release\netstandard2.1\RockBreakerNugget.dll" target="lib\netstandard2.1\RockBreakerNugget.dll" />
     <file src="C:\Users\husey\Documents\GitHub\RockBreakerNugget\RockBreakerNugget\icon.png" target="\icon.png" />
+    <file src="C:\Users\husey\Documents\GitHub\RockBreakerNugget\README.md" target="\README.md" />
   </files>
 </package>

@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\husey\\Documents\\GitHub\\RockBreakerNugget\\RockBreakerNugget\\RockBreakerNugget.csproj": {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "restore": {
         "projectUniqueName": "C:\\Users\\husey\\Documents\\GitHub\\RockBreakerNugget\\RockBreakerNugget\\RockBreakerNugget.csproj",
         "projectName": "RockBreaker.Infrastructure.Helper.Tool",

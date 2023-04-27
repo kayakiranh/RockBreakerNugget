@@ -4,7 +4,7 @@
     <id>RockBreaker.Infrastructure.Helper.Tool</id>
 	<authors>Hüseyin Kayakıran</authors>
 	<owners>Hüseyin Kayakıran</owners>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 	<title>RockBreaker Infrastructure Helper Tool</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>

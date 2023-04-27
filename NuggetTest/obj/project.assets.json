@@ -231,7 +231,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "RockBreaker.Infrastructure.Helper.Tool/1.0.3": {
+      "RockBreaker.Infrastructure.Helper.Tool/1.0.4": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -761,7 +761,7 @@
         "version.txt"
       ]
     },
-    "RockBreaker.Infrastructure.Helper.Tool/1.0.3": {
+    "RockBreaker.Infrastructure.Helper.Tool/1.0.4": {
       "type": "project",
       "path": "../RockBreakerNugget/RockBreakerNugget.csproj",
       "msbuildProject": "../RockBreakerNugget/RockBreakerNugget.csproj"
@@ -769,7 +769,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "RockBreaker.Infrastructure.Helper.Tool >= 1.0.3"
+      "RockBreaker.Infrastructure.Helper.Tool >= 1.0.4"
     ]
   },
   "packageFolders": {

@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>RockBreaker.Infrastructure.Helper.Tool</PackageId>
     <Title>RockBreaker Infrastructure Helper Tool</Title>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>Hüseyin Kayakıran</Authors>
     <Company>Hüseyin Kayakıran</Company>
     <Product>RockBreaker.Helper.Tool</Product>
